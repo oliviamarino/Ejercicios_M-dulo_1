@@ -1,0 +1,32 @@
+CREATE TABLE t1
+(a INT,
+b CHAR(10));
+
+-- Ejercicio 1:
+ALTER TABLE t1 RENAME t2;
+
+-- Ejercicio 2:
+ALTER TABLE t2 MODIFY COLUMN a TINYINT NOT NULL;
+
+-- Ejercicio 3:
+ALTER TABLE t2 MODIFY COLUMN b CHAR(20);
+ALTER TABLE t2 RENAME COLUMN b TO c;
+
+-- Ejercicio 4:
+ALTER TABLE t2 ADD d TIMESTAMP;
+
+-- Ejercicio 5:
+ALTER TABLE t2 ADD INDEX e (d);
+ALTER TABLE t2 ADD CONSTRAINT UNIQUE (a);
+
+-- Ejercicio 6:
+ALTER TABLE t2 DROP COLUMN c;
+
+-- Ejercicio 7:
+CREATE TABLE t3 LIKE t2;
+
+-- Ejercicio 8:
+DROP TABLE t2;
+ALTER TABLE t3 RENAME t1;
+
+

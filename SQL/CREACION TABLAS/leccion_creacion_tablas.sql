@@ -1,0 +1,34 @@
+CREATE SCHEMA creacion_tienda;
+USE creacion_tienda;
+
+-- Ej1: Crea la tabla customers
+
+CREATE TABLE customers2 
+(customerNumber INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+customerName TINYTEXT DEFAULT NULL, 
+contactLastName TINYTEXT DEFAULT NULL, 
+contactFirstName TINYTEXT DEFAULT NULL, 
+phone INT DEFAULT NULL,
+addressLine1 MEDIUMTEXT DEFAULT NULL, 
+addressLine2 MEDIUMTEXT DEFAULT NULL, 
+city TINYTEXT DEFAULT NULL, 
+state TINYTEXT DEFAULT NULL, 
+postalCode INT DEFAULT NULL, 
+country TINYTEXT DEFAULT NULL, 
+salesRepEmployeeNumber INT DEFAULT NULL, 
+creditLimit FLOAT DEFAULT NULL);
+
+-- Ej2: Crea la tabla employees
+
+CREATE TABLE employees2 
+(employeeNumber INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+lastName TINYTEXT DEFAULT NULL, 
+firstName TINYTEXT DEFAULT NULL, 
+extension INT DEFAULT NULL, 
+email VARCHAR(100) DEFAULT NULL, 
+officeCode INT DEFAULT NULL,
+reportsTo VARCHAR(100) DEFAULT NULL, 
+jobTitle VARCHAR(100)DEFAULT NULL);
+
+-- Ej3:
+
